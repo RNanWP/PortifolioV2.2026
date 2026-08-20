@@ -167,7 +167,7 @@ export default function Home() {
 
       <section className="numbers-strip" aria-label="Resumo profissional">
         <div className="number-item reveal">
-          <strong>4</strong>
+          <strong>6</strong>
           <span>projetos práticos apresentados abaixo</span>
         </div>
         <div className="number-item reveal">
@@ -187,21 +187,101 @@ export default function Home() {
       <section className="projects-preview section-shell" id="projetos">
         <div className="section-heading reveal">
           <div className="section-index">03 / PROJETOS</div>
-          <h2>Projetos que transformaram estudo em prática.</h2>
-          <p>Uma seleção de sistemas em que arquitetura, experiência e execução se encontram.</p>
+          <h2>Projetos reais, disponíveis para explorar.</h2>
+          <p>Conheça as aplicações funcionando e, se quiser ir além, veja também como cada uma foi construída.</p>
         </div>
 
         <div className="project-grid">
-          <a
+          <article className="project-card project-card-featured reveal">
+            <div className="project-topline">
+              <span>IA / EDUCAÇÃO INCLUSIVA</span>
+              <span className="project-live"><i /> Projeto online</span>
+            </div>
+            <div className="project-visual visual-inklue" aria-hidden="true">
+              <div className="inklue-orbit"><i /><i /><i /></div>
+              <div className="inklue-panel">
+                <div className="inklue-panel-head">
+                  <strong>INKLUE</strong>
+                  <span>PLANO INCLUSIVO</span>
+                </div>
+                <div className="inklue-metrics"><i /><i /><i /></div>
+                <div className="inklue-lines"><i /><i /><i /></div>
+                <small>IA + EDUCAÇÃO</small>
+              </div>
+            </div>
+            <div className="project-copy">
+              <div>
+                <h3>Inklue</h3>
+                <p>
+                  Plataforma criada no Hackathon FIAP 2026 para gerar planos de aula
+                  inclusivos, atividades adaptadas, PDFs e QR Codes com inteligência artificial.
+                </p>
+              </div>
+              <ul className="tech-list" aria-label="Tecnologias usadas">
+                <li>Next.js</li>
+                <li>TypeScript</li>
+                <li>Node.js</li>
+                <li>AWS</li>
+              </ul>
+            </div>
+            <div className="project-links">
+              <a className="project-link project-link-primary" href="https://inklue-hackaton26.vercel.app/dashboard" target="_blank" rel="noreferrer">
+                Ver projeto <span>↗</span>
+              </a>
+              <a className="project-link" href="https://github.com/RNanWP/Inklue-Hackaton26" target="_blank" rel="noreferrer">
+                Ver código <span>↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article className="project-card project-card-featured reveal">
+            <div className="project-topline">
+              <span>MOBILE + WEB / EDUCAÇÃO</span>
+              <span className="project-live"><i /> Projeto online</span>
+            </div>
+            <div className="project-visual visual-learnify" aria-hidden="true">
+              <div className="learnify-browser">
+                <div className="learnify-browser-top"><i /><i /><i /></div>
+                <div className="learnify-feed"><i /><i /><i /></div>
+              </div>
+              <div className="learnify-phone">
+                <span />
+                <strong>L</strong>
+                <i /><i /><i />
+              </div>
+              <span className="learnify-label">Mobile + Web</span>
+            </div>
+            <div className="project-copy">
+              <div>
+                <h3>Learnify</h3>
+                <p>
+                  Rede social educacional mobile e web que conecta alunos e professores
+                  por meio de publicações, comentários e compartilhamento de conhecimento.
+                </p>
+              </div>
+              <ul className="tech-list" aria-label="Tecnologias usadas">
+                <li>React Native</li>
+                <li>Expo</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+              </ul>
+            </div>
+            <div className="project-links">
+              <a className="project-link project-link-primary" href="https://tcc-4-learnify-rn-mobile-full-stack.vercel.app/" target="_blank" rel="noreferrer">
+                Ver projeto <span>↗</span>
+              </a>
+              <a className="project-link" href="https://github.com/RNanWP/TCC4-Learnify-RnMobile-FullStack" target="_blank" rel="noreferrer">
+                Ver código <span>↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article
             className="project-card project-card-featured reveal"
-            href="https://github.com/RNanWP/LingroomTC"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Abrir repositório do projeto LingroomTC"
           >
             <div className="project-topline">
               <span>API / EDUCAÇÃO</span>
-              <span>Repositório ↗</span>
+              <span className="project-live"><i /> Projeto online</span>
             </div>
             <div className="project-visual visual-lingroom" aria-hidden="true">
               <span className="visual-code">POST /auth/login</span>
@@ -227,18 +307,22 @@ export default function Home() {
                 <li>Docker</li>
               </ul>
             </div>
-          </a>
+            <div className="project-links">
+              <a className="project-link project-link-primary" href="https://lingroom-tc.vercel.app/" target="_blank" rel="noreferrer">
+                Ver projeto <span>↗</span>
+              </a>
+              <a className="project-link" href="https://github.com/RNanWP/LingroomTC" target="_blank" rel="noreferrer">
+                Ver código <span>↗</span>
+              </a>
+            </div>
+          </article>
 
-          <a
+          <article
             className="project-card reveal"
-            href="https://github.com/RNanWP/Full-Stack-SPOTIFY"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Abrir repositório do projeto Music Streaming"
           >
             <div className="project-topline">
               <span>FULL STACK / MÚSICA</span>
-              <span>Repositório ↗</span>
+              <span className="project-live"><i /> Projeto online</span>
             </div>
             <div className="project-visual visual-music" aria-hidden="true">
               <div className="record" />
@@ -255,18 +339,22 @@ export default function Home() {
                 <li>MongoDB</li>
               </ul>
             </div>
-          </a>
+            <div className="project-links">
+              <a className="project-link project-link-primary" href="https://fullstack-spotify.netlify.app/" target="_blank" rel="noreferrer">
+                Ver projeto <span>↗</span>
+              </a>
+              <a className="project-link" href="https://github.com/RNanWP/Full-Stack-SPOTIFY" target="_blank" rel="noreferrer">
+                Ver código <span>↗</span>
+              </a>
+            </div>
+          </article>
 
-          <a
+          <article
             className="project-card reveal"
-            href="https://github.com/RNanWP/FullStack-IA.Story-Uni9"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Abrir repositório do projeto StoryTales RN"
           >
             <div className="project-topline">
               <span>IA / EXPERIÊNCIA CRIATIVA</span>
-              <span>Repositório ↗</span>
+              <span className="project-live"><i /> Projeto online</span>
             </div>
             <div className="project-visual visual-story" aria-hidden="true">
               <span className="story-star">✦</span>
@@ -284,41 +372,51 @@ export default function Home() {
                 <li>UX</li>
               </ul>
             </div>
-          </a>
+            <div className="project-links">
+              <a className="project-link project-link-primary" href="https://storytalesrn.netlify.app/" target="_blank" rel="noreferrer">
+                Ver projeto <span>↗</span>
+              </a>
+              <a className="project-link" href="https://github.com/RNanWP/FullStack-IA.Story-Uni9" target="_blank" rel="noreferrer">
+                Ver código <span>↗</span>
+              </a>
+            </div>
+          </article>
 
-          <a
+          <article
             className="project-card reveal"
-            href="https://github.com/RNanWP/EliteCarsRN"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Abrir repositório do projeto liteCarsRN"
           >
             <div className="project-topline">
-              <span>DESKTOP / GESTÃO</span>
-              <span>Repositório ↗</span>
+              <span>E-COMMERCE / VAREJO</span>
+              <span className="project-live"><i /> Projeto online</span>
             </div>
-            <div className="project-visual visual-cars" aria-hidden="true">
-              <div className="cars-window">
-                <div className="cars-sidebar"><i /><i /><i /><i /></div>
-                <div className="cars-content">
-                  <span>liteCars</span>
-                  <div className="cars-metrics"><i /><i /><i /></div>
-                  <div className="cars-table"><i /><i /><i /><i /></div>
-                </div>
+            <div className="project-visual visual-drink" aria-hidden="true">
+              <span className="drink-logo">my<strong>DRINK</strong></span>
+              <div className="drink-bottles">
+                <i /><i /><i /><i />
               </div>
+              <span className="drink-tag">Escolha sua ocasião</span>
             </div>
             <div className="project-copy">
               <div>
-                <h3>liteCarsRN</h3>
-                <p>Sistema de gerenciamento para clientes e vendas com interface gráfica e operações CRUD.</p>
+                <h3>MyDrink</h3>
+                <p>Interface responsiva de e-commerce para bebidas, com categorias, ofertas e produtos em destaque.</p>
               </div>
               <ul className="tech-list">
-                <li>Python</li>
-                <li>CRUD</li>
-                <li>Desktop</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Swiper</li>
               </ul>
             </div>
-          </a>
+            <div className="project-links">
+              <a className="project-link project-link-primary" href="https://mydrinkretail.netlify.app/" target="_blank" rel="noreferrer">
+                Ver projeto <span>↗</span>
+              </a>
+              <a className="project-link" href="https://github.com/RNanWP/MyDrink" target="_blank" rel="noreferrer">
+                Ver código <span>↗</span>
+              </a>
+            </div>
+          </article>
         </div>
 
         <a className="projects-more reveal" href="https://github.com/RNanWP" target="_blank" rel="noreferrer">
