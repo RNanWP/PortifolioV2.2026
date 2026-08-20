@@ -187,8 +187,8 @@ export default function Home() {
       <section className="projects-preview section-shell" id="projetos">
         <div className="section-heading reveal">
           <div className="section-index">03 / PROJETOS</div>
-          <h2>Projetos reais, disponíveis para explorar.</h2>
-          <p>Conheça as aplicações funcionando e, se quiser ir além, veja também como cada uma foi construída.</p>
+          <h2>Projetos que transformaram estudo em prática.</h2>
+          <p>Uma seleção de sistemas em que arquitetura, experiência e execução se encontram.</p>
         </div>
 
         <div className="project-grid">
@@ -276,9 +276,7 @@ export default function Home() {
             </div>
           </article>
 
-          <article
-            className="project-card project-card-featured reveal"
-          >
+          <article className="project-card reveal">
             <div className="project-topline">
               <span>API / EDUCAÇÃO</span>
               <span className="project-live"><i /> Projeto online</span>
