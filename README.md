@@ -25,7 +25,7 @@ Portfólio profissional de **Renan Santos de Oliveira**, desenvolvido para apres
 - Metadados para compartilhamento e mecanismos de busca
 - `robots.txt` e `sitemap.xml` gerados pelo Next.js
 - Verificação do Google Search Console
-- Integração com Google Tag Manager
+- Integração com Google Analytics 4 e Google Tag Manager
 
 ## Executar localmente
 
