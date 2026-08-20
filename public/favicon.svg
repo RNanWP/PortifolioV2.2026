@@ -1,0 +1,6 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="14" fill="#090A0D"/>
+  <text x="9" y="43" fill="#F0EFE9" font-family="Arial, sans-serif" font-size="31" font-weight="900" letter-spacing="-3">R</text>
+  <text x="29" y="43" fill="#CFFF3D" font-family="Arial, sans-serif" font-size="31" font-weight="900" letter-spacing="-3">N</text>
+  <circle cx="54" cy="43" r="3" fill="#F0EFE9"/>
+</svg>
