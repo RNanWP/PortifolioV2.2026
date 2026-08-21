@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import MusicMiniPlayer from "./components/MusicMiniPlayer";
 
 const navItems = [
   { label: "Sobre", href: "#sobre" },
@@ -322,10 +323,7 @@ export default function Home() {
               <span>FULL STACK / MÚSICA</span>
               <span className="project-live"><i /> Projeto online</span>
             </div>
-            <div className="project-visual visual-music" aria-hidden="true">
-              <div className="record" />
-              <div className="equalizer"><i /><i /><i /><i /><i /></div>
-            </div>
+            <MusicMiniPlayer />
             <div className="project-copy">
               <div>
                 <h3>Music Streaming</h3>
