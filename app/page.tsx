@@ -81,6 +81,10 @@ export default function Home() {
               {item.label}
             </a>
           ))}
+          <SmoothRouteLink href="/credenciais" onClick={() => setMenuOpen(false)}>
+            <small>05</small>
+            Credenciais
+          </SmoothRouteLink>
         </nav>
 
         <a className="header-status" href="mailto:renan92011contato@outlook.com">
@@ -118,12 +122,6 @@ export default function Home() {
               Eu construo software com <strong>cabeça de operação</strong>,
               precisão técnica e olhar para quem está do outro lado da tela.
             </p>
-
-            <div className="hero-actions">
-              <SmoothRouteLink className="button button-primary" href="/credenciais">
-                Ver credenciais <span>↗</span>
-              </SmoothRouteLink>
-            </div>
           </div>
         </div>
 
@@ -560,7 +558,7 @@ export default function Home() {
             <figcaption><span>01</span> Sair da zona de conforto</figcaption>
           </figure>
           <figure className="photo-card reveal">
-            <img src="/images/renan-snow.webp" alt="Renan com um snowboard em uma montanha nevada" />
+            <img src="/images/renan-snow.webp" alt="Renan sentado na escadaria do Templo Zu Lai" />
             <figcaption><span>02</span> Colecionar primeiras vezes</figcaption>
           </figure>
           <figure className="photo-card photo-card-tall reveal">
