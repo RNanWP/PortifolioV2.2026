@@ -532,11 +532,16 @@ export default function Home() {
 
           <div className="certifications reveal">
             <span>Certificações</span>
-            <ul>
-              <li>Scrum Foundation Professional Certificate — CertiProf</li>
-              <li>Git e GitHub — Alura</li>
-              <li>Python Essentials 1 — Cisco Networking Academy</li>
-            </ul>
+            <div className="certifications-content">
+              <ul>
+                <li>Scrum Foundation Professional Certificate — CertiProf</li>
+                <li>Git e GitHub — Alura</li>
+                <li>Python Essentials 1 — Cisco Networking Academy</li>
+              </ul>
+              <a className="credentials-link" href="/credenciais">
+                Explorar formação completa <span>↗</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>

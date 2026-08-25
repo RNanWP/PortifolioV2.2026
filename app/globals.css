@@ -1369,8 +1369,28 @@ button { font: inherit; }
   text-transform: uppercase;
 }
 
+.certifications-content { display: grid; gap: 1.8rem; }
 .certifications ul { display: grid; gap: 0.8rem; margin: 0; padding: 0; list-style: none; }
 .certifications li { color: #4f504d; font-size: 0.9rem; line-height: 1.5; }
+
+.credentials-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(100%, 360px);
+  padding: 1rem 0;
+  border-top: 1px solid #b9b8b0;
+  border-bottom: 1px solid #b9b8b0;
+  color: var(--ink);
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: padding 180ms ease, color 180ms ease;
+}
+
+.credentials-link span { color: #66751f; }
+.credentials-link:hover { padding-left: 0.55rem; color: #66751f; }
 
 .beyond { background: #0d0f13; overflow: hidden; }
 
