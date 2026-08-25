@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
+import SmoothRouteLink from "../components/SmoothRouteLink";
 import styles from "./credentials.module.css";
 
 type Category = "formacao" | "certificacoes" | "cursos" | "documentos";
@@ -220,17 +221,12 @@ export default function CredentialsGallery() {
   return (
     <main className={styles.page}>
       <header className={styles.header}>
-        <Link className={styles.brand} href="/" aria-label="Voltar ao portfólio">
+        <SmoothRouteLink className={styles.brand} href="/" aria-label="Voltar ao portfólio">
           R<span>N</span>.
-        </Link>
-        <nav className={styles.nav} aria-label="Navegação das credenciais">
-          <Link href="/#projetos">Projetos</Link>
-          <Link href="/#trajetoria">Trajetória</Link>
-          <span>Credenciais</span>
-        </nav>
-        <Link className={styles.back} href="/">
+        </SmoothRouteLink>
+        <SmoothRouteLink className={styles.back} href="/">
           Voltar ao portfólio <span>↗</span>
-        </Link>
+        </SmoothRouteLink>
       </header>
 
       <section className={styles.hero}>
@@ -245,8 +241,7 @@ export default function CredentialsGallery() {
         </h1>
         <div className={styles.heroBottom}>
           <p>
-            Diplomas, certificações e cursos organizados por impacto profissional — sem transformar
-            o portfólio em uma lista massiva de arquivos.
+            Diplomas, certificações e cursos organizados por impacto profissional.
           </p>
           <div className={styles.heroStats} aria-label="Resumo das credenciais">
             <div><strong>13</strong><span>documentos</span></div>
@@ -344,7 +339,12 @@ export default function CredentialsGallery() {
           <span>PRÓXIMO PASSO</span>
           <h2>Conhecimento documentado.<br />Prática em evolução.</h2>
         </div>
-        <Link href="/#contato">Iniciar conversa <span>↗</span></Link>
+        <div className={styles.footerActions}>
+          <a href="/docs/curriculo-renan-oliveira.pdf" download>
+            Baixar currículo <span>↓</span>
+          </a>
+          <Link href="/#contato">Iniciar conversa <span>↗</span></Link>
+        </div>
       </footer>
 
       {selected && activeCredential && (

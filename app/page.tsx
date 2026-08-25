@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import MusicMiniPlayer from "./components/MusicMiniPlayer";
+import SmoothRouteLink from "./components/SmoothRouteLink";
 
 const navItems = [
   { label: "Sobre", href: "#sobre" },
@@ -119,12 +120,9 @@ export default function Home() {
             </p>
 
             <div className="hero-actions">
-              <a className="button button-primary" href="#projetos">
-                Explorar projetos <span>↘</span>
-              </a>
-              <a className="text-link" href="/docs/curriculo-renan-oliveira.pdf" download>
-                Baixar currículo <span>↓</span>
-              </a>
+              <SmoothRouteLink className="button button-primary" href="/credenciais">
+                Ver credenciais <span>↗</span>
+              </SmoothRouteLink>
             </div>
           </div>
         </div>
@@ -538,9 +536,9 @@ export default function Home() {
                 <li>Git e GitHub — Alura</li>
                 <li>Python Essentials 1 — Cisco Networking Academy</li>
               </ul>
-              <a className="credentials-link" href="/credenciais">
+              <SmoothRouteLink className="credentials-link" href="/credenciais">
                 Explorar formação completa <span>↗</span>
-              </a>
+              </SmoothRouteLink>
             </div>
           </div>
         </div>
@@ -562,7 +560,7 @@ export default function Home() {
             <figcaption><span>01</span> Sair da zona de conforto</figcaption>
           </figure>
           <figure className="photo-card reveal">
-            <img src="/images/renan-snow.webp" alt="Renan praticando snowboard em uma montanha nevada" />
+            <img src="/images/renan-snow.webp" alt="Renan com um snowboard em uma montanha nevada" />
             <figcaption><span>02</span> Colecionar primeiras vezes</figcaption>
           </figure>
           <figure className="photo-card photo-card-tall reveal">
